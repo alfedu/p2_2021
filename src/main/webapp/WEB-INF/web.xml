@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <servlet-name>ContactListController</servlet-name>
+    <servlet-class>aiss.controller.ContactListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactListController</servlet-name>
+    <url-pattern>/contactlist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ContactUpdateController</servlet-name>
+    <servlet-class>aiss.controller.ContactUpdateController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactUpdateController</servlet-name>
+    <url-pattern>/contactupdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ContactDeleteController</servlet-name>
+    <servlet-class>aiss.controller.ContactDeleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactDeleteController</servlet-name>
+    <url-pattern>/contactdelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ContactNewController</servlet-name>
+    <servlet-class>aiss.controller.ContactNewController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactNewController</servlet-name>
+    <url-pattern>/contactnew</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>contactlist</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/error.jsp</location>
+  </error-page>
+</web-app>
